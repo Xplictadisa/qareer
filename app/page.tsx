@@ -1,9 +1,7 @@
-import PageLoading from '@/components/PageLoading';
-
 const page = () => {
   return (
     <div>
-      <PageLoading />
+      <h1>Qareer</h1>
     </div>
   );
 };
