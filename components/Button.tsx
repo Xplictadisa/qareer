@@ -11,7 +11,7 @@ const Button = ({
   onClick?: () => void;
   children: React.ReactNode;
 }) => {
-  const classes = `px-4 py-2 bg-color-5 text-n-2 rounded-md text-n-8 button hover:opacity-[0.85] transition-all ${className}`;
+  const classes = `relative z-10 px-4 py-2 bg-color-5 text-n-2 rounded-md text-n-8 button hover:opacity-[0.85] transition-all ${className}`;
 
   //rendering button
   const renderBtn = () => (

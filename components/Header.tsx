@@ -6,7 +6,7 @@ import headerImg from '@/public/headerImg.svg';
 
 const Header = () => {
   return (
-    <header className='container mx-auto p-4 md:py-6'>
+    <header className='container relative z-10 mx-auto p-4 md:py-6'>
       <nav className='flex justify-between items-center'>
         <div className='flex items-center space-x-2'>
           <Image
