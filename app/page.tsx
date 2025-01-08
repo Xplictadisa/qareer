@@ -1,12 +1,18 @@
 'use client';
 
-import ThemeSwitch from '@/components/ThemeSwitch';
+import Feature from '@/components/Feature';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
 
 const page = () => {
   return (
-    <div className='text-primary-light dark:text-primary-dark flex flex-col relative items-center justify-center h-screen bg-n-light dark:bg-n-dark'>
-      <h1 className='text-4xl'>Qareer</h1>
-      <ThemeSwitch />
+    <div className='bg-n-2 transition-all text-n-6 w-full dark:bg-n-8 dark:text-n-2'>
+      <Header />
+      <main>
+        <div className='h-[1px] w-full bg-n-9 dark:bg-n-9' />
+        <Hero />
+        <Feature />
+      </main>
     </div>
   );
 };

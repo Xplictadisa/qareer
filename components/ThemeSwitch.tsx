@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 
-export default function ThemeSwitch() {
+export default function ThemeSwitch({ className }: { className?: string }) {
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme } = useTheme();
 
@@ -26,15 +26,23 @@ export default function ThemeSwitch() {
       />
     );
 
+  const classname = `cursor-pointer text-xl ${className}`;
+
   if (resolvedTheme === 'dark') {
     return (
-      <FiSun className='cursor-pointer' onClick={() => setTheme('light')} />
+      <FiSun
+        className={`${classname} text-color-5`}
+        onClick={() => setTheme('light')}
+      />
     );
   }
 
   if (resolvedTheme === 'light') {
     return (
-      <FiMoon className='cursor-pointer' onClick={() => setTheme('dark')} />
+      <FiMoon
+        className={`${classname} text-n-8`}
+        onClick={() => setTheme('dark')}
+      />
     );
   }
 }
