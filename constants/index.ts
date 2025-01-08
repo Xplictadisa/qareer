@@ -95,3 +95,24 @@ export const howToData = [
     description: 'Monitor your job search journey and insights',
   },
 ];
+
+export const footerLinks = [
+  {
+    id: 0,
+    title: 'Contact',
+    url: 'https://linkedin.com/in/graham-boyle',
+    target: '_blank',
+  },
+  {
+    id: 1,
+    title: 'Privacy',
+    url: '#',
+    target: '_self',
+  },
+  {
+    id: 2,
+    title: 'terms',
+    url: '#',
+    target: '_self',
+  },
+];

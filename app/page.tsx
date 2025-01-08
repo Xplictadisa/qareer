@@ -1,6 +1,8 @@
 'use client';
 
+import Cta from '@/components/Cta';
 import Feature from '@/components/Feature';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import HowItWork from '@/components/HowItWork';
@@ -14,6 +16,8 @@ const page = () => {
         <Hero />
         <Feature />
         <HowItWork />
+        <Cta />
+        <Footer />
       </main>
     </div>
   );
