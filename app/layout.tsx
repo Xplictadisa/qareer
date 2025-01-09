@@ -28,6 +28,22 @@ export const metadata: Metadata = {
   twitter: {
     creator: '@dev__grey',
   },
+  openGraph: {
+    title: 'Qareer | Job Tracker',
+    description: 'A job tracker across multiple career paths.',
+    url: 'https://qareer-q.vercel.app',
+    siteName: 'Qareer',
+    images: [
+      {
+        url: 'https://raw.githubusercontent.com/Greybillions/qareer/refs/heads/master/public/heroImg1.png',
+        width: 1200,
+        height: 630,
+        alt: 'Qareer - Job Tracker',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
