@@ -8,7 +8,7 @@ const Cta = () => {
         <h1 className='h2 text-center mb-6 text-n-8 font-semibold dark:text-n-1 px-6'>
           Ready to take your job search to the next level?
         </h1>
-        <Button href='/signup'>Start your free trial</Button>
+        <Button href='/auth/signup'>Start your free trial</Button>
       </div>
     </section>
   );

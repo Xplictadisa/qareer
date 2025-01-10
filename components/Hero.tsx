@@ -35,7 +35,10 @@ const Hero = () => {
             <BackgroundCircles />
           </ScrollParallax>
 
-          <Button className='text-n-8 border border-n-8 dark:border-color-5 bg-transparent dark:bg-color-5 dark:text-n-1 dark:hover:bg-color-5 transition-all hover:scale-x-[1.04] self-center flex items-center  justify-center'>
+          <Button
+            href='/auth/signup'
+            className='text-n-8 border border-n-8 dark:border-color-5 bg-transparent dark:bg-color-5 dark:text-n-1 dark:hover:bg-color-5 transition-all hover:scale-x-[1.04] self-center flex items-center  justify-center'
+          >
             sign up for Free <MdArrowRightAlt className='ml-2 text-lg' />
           </Button>
         </div>

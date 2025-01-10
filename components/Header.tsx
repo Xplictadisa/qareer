@@ -23,12 +23,12 @@ const Header = () => {
         <div className='flex space-x-4 justify-center items-center'>
           <ThemeSwitch />
           <Button
-            href='/new-account'
+            href='/auth/signup'
             className='bg-transparent text-n-9 hover:bg-n-13 hover:text-n-1 dark:text-n-1 dark:hover:bg-color-5 hidden md:inline-block'
           >
             New Account
           </Button>
-          <Button href='/signin'>Sign in</Button>
+          <Button href='/auth/login'>Sign in</Button>
         </div>
       </nav>
     </header>
