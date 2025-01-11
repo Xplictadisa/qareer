@@ -30,6 +30,7 @@ export const metadata: Metadata = {
   ],
   twitter: {
     creator: '@dev__grey',
+    card: 'summary_large_image',
   },
   openGraph: {
     title: 'Qareer | Job Tracker',
@@ -55,32 +56,32 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider
-      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
-    >
-      <html lang='en' suppressHydrationWarning>
-        <head>
-          <Script
-            strategy='afterInteractive'
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-XK9D4511RZ`}
-          />
-          <Script id='gtag' strategy='afterInteractive'>
-            {`
+    <html lang='en' suppressHydrationWarning>
+      <head>
+        <Script
+          strategy='afterInteractive'
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-XK9D4511RZ`}
+        />
+        <Script id='gtag' strategy='afterInteractive'>
+          {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-XK9D4511RZ');
           `}
-          </Script>
-        </head>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        </Script>
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ClerkProvider
+          publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
         >
           <Providers>{children}</Providers>
-        </body>
-      </html>
-    </ClerkProvider>
+        </ClerkProvider>
+      </body>
+    </html>
   );
 }
