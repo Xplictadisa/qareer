@@ -26,11 +26,12 @@ const SignupForm = () => {
   };
 
   return (
-    <div className='relative min-h-screen bg-n-2 transition-all text-n-6 w-full dark:bg-n-8 dark:text-n-2'>
+    <div className='relative min-h-screen bg-transparent transition-all text-n-6 w-full dark:text-n-2'>
+      <div className='bg-img' />
       <Header />
       <div className='flex items-center justify-center w-full h-0.25 bg-n-9 data:bg-n-6 relative z-0' />
-      <div className='flex items-center mt-20 justify-center w-full h-full'>
-        <div className='w-full max-w-md p-8 bg-white shadow-md rounded-lg'>
+      <div className='flex items-center justify-center h-full mt-28 w-[300px] md:w-[600px] mx-auto'>
+        <div className='w-full max-w-md md:p-8 p-4 py-8 bg-white shadow-md rounded-lg'>
           <h2 className='text-2xl font-semibold text-center text-gray-800 mb-6'>
             Create an Account
           </h2>
@@ -93,7 +94,7 @@ const SignupForm = () => {
               {loading ? 'Signing Up...' : 'Sign Up'}
             </Button>
           </form>
-          <p className='text-sm text-center text-gray-600 mt-4'>
+          <p className='text-sm text-center text-gray-600 flex flex-col md:flex-row mt-4 justify-center items-center'>
             Already have an account?{' '}
             <Button
               href='/auth/login'
