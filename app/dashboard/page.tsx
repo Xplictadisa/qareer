@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { UserButton, useUser } from '@clerk/nextjs';
 import { SignOutButton } from '@clerk/nextjs';
+import Loading from './loading';
 
 const Dashboard = () => {
   const { user, isLoaded } = useUser();
@@ -16,7 +17,7 @@ const Dashboard = () => {
   }, [isLoaded, user, router]);
 
   if (!isLoaded) {
-    return <div>Loading...</div>; // Prevent flickering during loading
+    return <Loading />; // Prevent flickering during loading
   }
 
   if (!user) {
