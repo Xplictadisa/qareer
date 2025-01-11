@@ -14,6 +14,7 @@ const page = () => {
       <main>
         <div className='h-[1px] w-full bg-n-9 dark:bg-n-9' />
         <Hero />
+
         <Feature />
         <HowItWork />
         <Cta />
