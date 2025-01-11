@@ -12,7 +12,7 @@ const page = () => {
     <div className='bg-n-2 transition-all text-n-6 w-full dark:bg-n-8 dark:text-n-2'>
       <Header />
       <main>
-        <div className='h-[1px] w-full bg-n-9 dark:bg-n-9' />
+        <div className='h-[0.5px] w-full bg-n-9 dark:bg-n-9' />
         <Hero />
         <Feature />
         <HowItWork />
