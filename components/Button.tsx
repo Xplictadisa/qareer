@@ -2,11 +2,15 @@ import React from 'react';
 
 const Button = ({
   className,
+  type = 'button',
   href,
   onClick,
   children,
+  disabled,
 }: {
   className?: string;
+  type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
   href?: string;
   onClick?: () => void;
   children: React.ReactNode;
@@ -15,7 +19,12 @@ const Button = ({
 
   //rendering button
   const renderBtn = () => (
-    <button className={classes} onClick={onClick}>
+    <button
+      className={classes}
+      disabled={disabled}
+      type={type}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

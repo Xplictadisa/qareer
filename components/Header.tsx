@@ -4,9 +4,11 @@ import Button from './Button';
 import Image from 'next/image';
 import headerImg from '@/public/headerImg.svg';
 
-const Header = () => {
+const Header = (className: { className?: string }) => {
   return (
-    <header className='container relative z-10 mx-auto p-4 md:py-6'>
+    <header
+      className={`container relative z-10 mx-auto p-4 md:py-6 ${className}`}
+    >
       <nav className='flex justify-between items-center'>
         <div className='flex items-center space-x-2'>
           <Image
