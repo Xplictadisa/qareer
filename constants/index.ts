@@ -100,7 +100,7 @@ export const footerLinks = [
   {
     id: 0,
     title: 'Contact',
-    url: 'https://linkedin.com/in/graham-boyle',
+    url: 'https://linkedin.com/in/grahamboyle',
     target: '_blank',
   },
   {
